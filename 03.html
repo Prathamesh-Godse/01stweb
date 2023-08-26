@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag Wheels - Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .checkout-container {
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #ff665c;
+  }</style>
+  
+</head>
+<body>
+  <div class="checkout-container">
+    <h2>Checkout</h2>
+    <form class="checkout-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+      
+      <label for="address">Address</label>
+      <textarea id="address" required></textarea>
+      
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" required>
+      
+      <label for="expiry">Expiry Date</label>
+      <input type="text" id="expiry" required>
+      
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" required>
+      
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </div>
+</body>
+</html>
