@@ -69,14 +69,14 @@
       <textarea id="address" required></textarea>
       
       <label for="card-number">Card Number</label>
-      <input type="text" name="card_number" id="card_number" oninput="this.value = this.value.replace(/[^0-9]/g, '');" max="16">
+      <input type="text" name="card_number" id="card_number" oninput="this.value = this.value.replace(/[^0-9]/g, '');" min="16" max="16">
 
       
       <label for="expiry">Expiry Date</label>
       <input type="date" id="expiry" required>
       
       <label for="cvv">CVV</label>
-       <input type="text" name="cvv" id="cvv" oninput="this.value = this.value.replace(/[^0-9]/g, '');" max="3">
+       <input type="text" name="cvv" id="cvv" oninput="this.value = this.value.replace(/[^0-9]/g, '');" min="3" max="3">
 
       
       <button type="submit" class="btn">Place Order</button>
